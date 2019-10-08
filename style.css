@@ -1,0 +1,90 @@
+html{
+    background-color: rgb(219, 229, 240);
+    color: darkslategray;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Grande', Arial, sans-serif;
+}
+body{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+a{
+    color:rgb(192, 107, 107);
+}
+a:hover{
+    color: rgb(219, 229, 240);
+    background: rgb(192, 107, 107);
+}
+div{
+    padding-top: 10px;
+}
+p{
+    color: rgb(56, 47, 52);
+    background-color: rgb(219, 229, 240);
+    background-color: 50px;
+    margin-left:0px;
+    margin-right:0px;
+}
+/*
+
+Class Modifiers
+
+*/
+.main_div{
+    width: 100%;
+    color: rgb(219, 229, 240);
+    font-size: 30px;
+    font-style: oblique;
+    background-color: rgb(219, 229, 240);
+    margin:0;
+    border:0;
+    text-align: center;
+    flex-direction: column;
+
+}
+.top_div{
+    width: 100%;
+    color: rgb(219, 229, 240);
+    font-size: 30px;
+    font-style: oblique;
+    background-color: rgb(56, 47, 52);
+    margin:0;
+    border:0;
+    text-align: center;
+    flex-direction: column;
+}
+.main_div__links{
+    font-family: 'Lucida Grande', Arial, sans-serif;
+    font-size: 25px;
+    font-style: oblique;
+    text-align: center;
+}
+.main_div__links a{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.main_div img{
+    width: 900px;
+    border-style: solid;
+    border-color: rgb(56, 47, 52);
+    border-width: 4px;
+}
+.main_div__body{
+    background-color: rgb(192, 107, 107);
+    color: rgb(56, 47, 52);
+}
+.main_div__center{
+    padding: 20px;
+    width: 60%;
+    display: inline-block;
+}
+.main_div__resume_block{
+    background-color: rgb(219, 229, 240);
+    color: rgb(192, 107, 107);
+    font-size: 35px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+}
