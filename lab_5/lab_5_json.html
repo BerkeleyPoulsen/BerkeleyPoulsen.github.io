@@ -11,14 +11,14 @@
     <div class="wrapper">
       <div class="header">Test JSON page</div>
       <!-- <button class="button" onclick="loadData()">Load Some JSON</button> -->
-      <button class="button" onclick="console.log('You haven\'t written a function yet!');">Click me to replace list entries</button>
+      <button class="button" onclick="functionClick()">Click me to replace list entries</button>
       <div class="content">
         <ul class="instructions">
           <li>Delete and re-clone the class repository</li>
           <li>Open <span class="code">lab_5_json.html</span> in your browser</li>
           <li>Open your developer tools and look at the logged data</li>
           <li>In your console, write code to:
-            <ol>
+            <ol id="country" class="replace">
               <li>At the click of the button above</li>
               <li>Loop through the 'countries' variable</li>
               <li>Replace this list's entries with country names</li>
@@ -279,6 +279,28 @@
       { "name": "Zimbabwe", "code": "ZW" }
     ]
     console.log("List of countries in the world", countries);
+
+    function functionClick(){
+
+    var old = document.getElementById("country").innerHTML = null;
+    console.log(old)
+
+    var o;
+    arr = [];
+    for (o = 0; o < countries.length; o++){
+      arr.push(countries[o].name);
+    };
+
+    var i;
+    for (i = 0; i < 50; i++){
+      val = arr[Math.floor(Math.random() * arr.length)]
+      console.log(val)
+      var n = document.createElement("LI");
+      var t = document.createTextNode(val);
+      n.appendChild(t);
+      document.getElementById("country").appendChild(n)
+      }
+    };
   </script>
 </body>
 
