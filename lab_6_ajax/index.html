@@ -24,9 +24,7 @@
         .then(res => res.json())
         .then(res => res.map(c => c.name))
         .then(names => {
-
         var old = document.getElementById("country").innerHTML = null;
-
           var i;
           for (i = 0; i < 15; i++){
             val = names[Math.floor(Math.random() * names.length)]
@@ -38,5 +36,4 @@
       }})}
   </script>
 </body>
-
 </html>
