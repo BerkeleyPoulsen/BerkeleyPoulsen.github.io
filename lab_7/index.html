@@ -27,7 +27,6 @@ function listDOM(arr){
     document.querySelector(".list").appendChild(index);
   };
 };
-
 function loadData(){
   fetch("https://api.umd.io/v0/bus/routes")
   .then(res => res.json())
@@ -47,12 +46,12 @@ function loadData(){
     .then(array => {listDOM(array);
       return array})
     .then(array => {var bus_name = array.find(element => element == "132 The Varsity");
-      var name = "UMD Bus Route " + bus_name;
-      console.log(name);
-      return name})
+        var name = "UMD Bus Route " + bus_name;
+        console.log(name);
+        return name})
     .then(data => {document.querySelector(".header").innerText = data;
-      console.log(data);
-      return data});
+        console.log(data);
+        return data});
 };
   </script>
 </body>
