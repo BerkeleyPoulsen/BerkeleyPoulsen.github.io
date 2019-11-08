@@ -40,12 +40,9 @@
           keys_list = [];
           class_list = []
           for (var keys in res){
-            console.log(keys)
-            if (keys.includes("INST") == true){
-              keys_list.push(keys)
-            }
+            keys_list.push(keys);
           }
-          console.log(class_list);
+          console.log(key_list);
           return res
         })
         .then(codes => document.querySelector(".content").innerText = codes);
