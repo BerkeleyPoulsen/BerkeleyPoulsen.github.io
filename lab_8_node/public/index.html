@@ -36,6 +36,18 @@
           console.log(res); // logging step to check what we got
           return res;
           })
+        .then(res => {
+          keys_list = [];
+          class_list = []
+          for (var keys in res){
+            console.log(keys)
+            if (keys.includes("INST") == true){
+              keys_list.push(keys)
+            }
+          }
+          console.log(class_list);
+          return res
+        })
         .then(codes => document.querySelector(".content").innerText = codes);
     };
 
