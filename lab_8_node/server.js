@@ -43,7 +43,7 @@ app.use(express.static('public'));
 // but it is okay for a first-level example
 app.get('/api', (req, res) => {
   console.log('script');
-  const baseURL = 'https://api.umd.io/v0/courses';
+  const baseURL = 'https://api.umd.io/v0/courses/list';
   fetch(baseURL)
     .then((r) => {
       console.log(r);
@@ -51,7 +51,7 @@ app.get('/api', (req, res) => {
     })
     .then((data) => {
       console.log('Working!');
-      res.send({ course_id: data });
+      res.send({ data: data });
     })
     .catch((err) => {
       console.log(err);

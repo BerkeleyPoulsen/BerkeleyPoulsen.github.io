@@ -11,8 +11,9 @@
     <div class="wrapper">
       <div class="header">API Loader</div>
       <button class="button" onclick="loadData()">Load Some JSON from a server</button>
-      <div class="content"></div>
-        <ol id = "list"></ol>
+      <div class="content">
+          <ol class="list"></ol>
+      </div>
       <div class="footer"></div>
     </div>
   </div>
@@ -24,19 +25,33 @@
       var index = document.createElement('li');
       index.appendChild(document.createTextNode(arr[i]));
       document.querySelector(".list").appendChild(index);
-    };};
+    };
+  };
 
     function loadData() {
       console.log('fetch'); // confirm code is running on click
       fetch('/api')
         .then(res => res.json())
         .then(res => {
+          console.log("check")
           console.log(res); // logging step to check what we got
           return res;
-        })
+          })
+        .then(res => {
+          var arr = [];
+          var len = res.length;
+          var i;
+          for (i = 0; i < len; i++){
+            id_pop = res[0]["course_id"];
+            console.log(id_pop)
+            title_pop = res[0]["name"];
+            arr.push(id_pop);
+            arr.push(title_pop);
+          }
+          return res})
         .then(res => res.data.map(c => c.course_id))
         .then(codes => document.querySelector(".content").innerText = codes);
-    }
+    };
   </script>
 </body>
 </html>
