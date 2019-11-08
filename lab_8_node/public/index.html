@@ -27,7 +27,6 @@
       document.querySelector(".list").appendChild(index);
     };
   };
-
     function loadData() {
       console.log('fetch'); // confirm code is running on click
       fetch('/api')
@@ -37,21 +36,10 @@
           console.log(res); // logging step to check what we got
           return res;
           })
-        .then(res => {
-          var arr = [];
-          var len = res.length;
-          var i;
-          for (i = 0; i < len; i++){
-            id_pop = res[0]["course_id"];
-            console.log(id_pop)
-            title_pop = res[0]["name"];
-            arr.push(id_pop);
-            arr.push(title_pop);
-          }
-          return res})
-        .then(res => res.data.map(c => c.course_id))
         .then(codes => document.querySelector(".content").innerText = codes);
     };
+
+    //.then(res => {res.map(c => c.course_id)})
   </script>
 </body>
 </html>
