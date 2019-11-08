@@ -2,7 +2,7 @@ const express = require('express');
 const fetch = require('node-fetch');
 
 const app = express();
-const port = 3000;
+const port = 4001;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -42,12 +42,16 @@ app.use(express.static('public'));
 // this is, right now, an introduction to Callback Hell
 // but it is okay for a first-level example
 app.get('/api', (req, res) => {
-  const baseURL = 'https://api.umd.io/v0/bus/routes';
+  console.log('script');
+  const baseURL = 'https://api.umd.io/v0/courses';
   fetch(baseURL)
-    .then((r) => r.json())
+    .then((r) => {
+      console.log(r);
+      return r.json();
+    })
     .then((data) => {
-      console.log(data);
-      res.send({ data: data });
+      console.log('Working!');
+      res.send({ course_id: data });
     })
     .catch((err) => {
       console.log(err);
