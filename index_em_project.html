@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function parallax() {
+            var layer1 = document.getElementById('img_1');
+            var layer2 = document.getElementById('img_2');
+            var layer3 = document.getElementById('introduction');
+            layer1.style.backgroundPositionY = -(window.pageYOffset / 2)+'px,'+ -(window.pageYOffset / 4)+'px,' +-(window.pageYOffset / 8)+'px';
+            layer2.style.backgroundPositionY = 700-(window.pageYOffset)+'px';
+            layer3.style.opacity = 1 - (window.scrollY/360);
+            layer3.style.left = window.scrollY*2+'px';
+            };
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            /*
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            document.getElementById("introduction").style.opacity = "0";
+            document.getElementById("introduction").style.left= "2600px";
+        } else {
+            document.getElementById("introduction").style.opacity = "1";
+            document.getElementById("introduction").style.left= "0px";
+        };*/
+    
+        if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+            document.getElementById("header").style.font = "'Raleway', sans-serif";
+            document.getElementById("header").style.fontWeight = "700";
+            document.getElementById("header").style.backgroundColor = "rgba(14, 21, 24, 1)";
+            document.getElementById("header").style.borderBottom = "2px solid #2a3235";
+            document.getElementById("header").style.display = "inline-flexbox";
+            document.getElementById("header").style.padding = "25px";
+            document.getElementById("links").style.marginBottom = "7px";
+            document.getElementById("links").style.fontWeight = "300";
+            document.getElementById("title").style.fontSize = "40px";
+            document.getElementById("title").style.border = "0px";
+            document.getElementById("title").style.transition = "0.7s";
+            $("#header").css("mix-blend-mode", "normal");
+            $(".tool p").css("font-size", "13px");
+            $("#title").css("display", "flex");
+    
+        } else {
+            document.getElementById("header").style.fontWeight = "700";
+            document.getElementById("header").style.padding = "5%";
+            document.getElementById("header").style.backgroundColor = "rgba(217, 211, 224,0)";
+            document.getElementById("header").style.borderBottom = "0px solid #7385A7";
+            document.getElementById("header").style.display = "block";
+            document.getElementById("title").style.fontSize = "70px";
+            document.getElementById("links").style.marginBottom = "20px";
+            document.getElementById("links").style.fontSize = "25px";
+            document.getElementById("title").style.border = "0px";
+            document.getElementById("title").style.transition = "0.7s";
+            $("#header").css("mix-blend-mode", "exclusion");
+            $(".tool p").css("font-size", "25px");
+            $("#title").css("display", "initial");
+            }
+        };
+        window.addEventListener("scroll", parallax, false);
+    
+    </script>
+    
+</head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+<div id="header">
+    <div id="links">
+        <a href="index.html">Berkeley Poulsen</a>
+        <a>Contact Me</a>
+        <a href="https://www.linkedin.com">LinkedIn</a>
+        </div>
+    <div id="title">
+        <a>EXPRESS HEALTHCARE REDESIGN</a>
+        <div class="tool">
+            <p style = "background-color: rgb(202, 91, 27);">Figma</p>
+            <p style = "background-color: rgb(57, 128, 124);">UI</p>
+            <p style = "background-color: rgb(44, 74, 109);">UX</p>
+        </div>
+    </div>
+</div>
+    <div class="content">
+        <div id="img_2"></div>
+            <div id="introduction">
+                <p> &emsp; </p>
+                <p> &emsp; I decided to bring it upon myself to take this as an opportunity, and made an unsolcited redesign of the entire online process.</p>
+                <br>
+                <p> &emsp; Projects like this one gave me insight into what can go right with design, but also allowed me to take a deeper look at what's really wrong, why it's wrong, and if there is a UI fix. At the end of the day, the goal is to help the User in the most useful way.</p>
+            </div>
+        </div>
+        <div id="img_1">
+        </div>
+    </div>
+    <h1>Introduction</h1>
+    <div class="container">
+        <p> &emsp; Let's Give some credit where credit is due. Covid-19 has entered every facet of life, and healthcare workers have had to adapt to ever-changing circumstances. Healthcare IT has the ability to help them in some many different ways, but it can also be a hinderance for both patient and provider. When patients interact with your site, you wan't them to understand as much as they can before coming, and provide everything neccessary, so that when they arrive, there isn't any confusion.</p>
+        <p> &emsp; Let's say you're someone attempting to book a Covid-19 test. Your first insight might be to find a location that tests. Google will show you your nearest locations, so in all likelihood you'll pick the one closest to you. For me, Express Healthcare - College Park is within walking distance. Easy enough, you just click the link to that Express Healthcare website, and click on the colleg park location. It's a bit clunky getting there, but nothing a custom domain and landing page can't fix</p>
+        <p> &emsp; <b>Now comes the tricky part.</b> You see, The interaction between the web prescence and clinic garners some confusing practices. Firstly, the appointment registration time and date are up to the user to decide. 6:00AM woulden't be a bad time to get a Covid test to start your day, but it's well before their hours of operation. Even if you wait though, you'd have to answer the same questions in-person as you did online, and no set timing means anyone can come at anytime.</p>
+        <p> &emsp; This means it takes a very long time to get a covid test, unless you go when no one else does. for a clinic, the goal should be to "flatten the local curve", which is to say spread their peak hours towards the ends, flattening out the middle. This allows for quicker tests, and less waiting, which is good for everyone involved, and reduces density.</p>
+    </div>
+    <h1>Solution</h1>
+    <div class="container">
+        <p> &emsp; So what can be done? What I did was build something with strict user movment, that allows for the same affordances and features, without sacrificing informational value. Visuals have been updated to allow for a cleaner and more elegant design.</p>
+        <h4>Home Page</h4>
+        <p>We're going to assume that this mockup is for appointment-based cases, and is specifically for Covid testing. You're prompted to give some primary information, as well as book an appointment on the main page. This is mainly to simplfiy the booking process, and deliver a date range to the calendar booking application later on.</p>
+        <img src="cms_1.png">
+
+        <h4>Information Gathering</h4>
+        <p> &emsp; On the booking side, knowing patient information is imperative to the healthcare process. Much of this UI mockup contains the same fields as the main site, but has differences. Drop down menus were made in place of text entry boxes, such as with "Height in Inches and Feet", restricitng the ability for people to input "six" for example.</p>
+
+        <img src="cms_2.png">
+        <h4>Calendar Interface</h4>
+        <p> &emsp; Building the appointment registration interface was an interesting challenge. For starters, a clinic might want to change their appointment times based on shift availability or test availaibilty. The goal here is to give clinic adminstrators as much customizability as they would need, while limiting the amount of people that can come at one time. This is also the landing page for confiming your entire appointment, so the confirmation button currently has a double press to confirm.</p>
+
+        <img src="cms_3.png">
+        <h4>Appointment Confirmation</h4>
+        <p> &emsp; Finally, We get to the appointment confirmation side of the appointnment experience. Right now, there isn't a confirmation visual after you have gone through the process of moving thorugh the applicaiton process. Instead, you are met with an email asking you to sign up for a telemedicine visit, which is a succint problem altogether. This confirmation page provides informational feedback, and repeats back to you the appointment choice you've made. </p>
+
+        <img src="cms_4.png">
+        <p> &emsp; Hopefully a design change like this will provide the much needed support for healthcare workers. The goal was to minimize population by provind specific appointment registration blocks for covid tests,as well as create a unified aesthethic within the site.</p>
+    </div>
+</html>
+
+<style>
+    #introduction{
+        font-size: calc(15px + 2vh);
+        position: fixed;
+        margin: 4vw;
+        margin-top: calc(34vh);
+        color: rgb(115, 133, 167);
+        z-index: 1000;
+        width: 50vw;
+        margin-left: 10vw;
+        -webkit-user-select: none; /* Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+    }
+    #introduction a{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        color:rgb(212, 64, 27);
+        -webkit-user-select:text; /* Safari */        
+        -moz-user-select: text; /* Firefox */
+        -ms-user-select: text; /* IE10+/Edge */
+        user-select: text; /* Standard */
+    }
+    
+    #img_1{
+  /* The image used */
+        background-image: url("bk.png");
+        /* Set a specific height */
+        min-height: 1080px; 
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: auto;
+        background-repeat: no-repeat;
+        background-size: calc(100% + 150vh);
+        background-position: right;
+        background-position-x: calc(0vw + 25%);
+        background-position-y: 0vw;
+        padding-left: 0px;
+        width: 100vw;
+        height: 100vh;
+    }
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    html{
+        overflow-x: hidden;
+        background-color: rgb(191, 209, 216);
+        margin:auto;
+    }
+    h1 {
+        margin-left: 10vw;
+        color: rgb(42, 50, 53);
+        font-family: 'Raleway', sans-serif;
+        font-size: 70px;
+        margin-bottom: 80px;
+        padding-top: 160px;
+        text-decoration: underline 5px solid rgb(42, 50, 53);
+    }
+    h2 {
+        font-size: 30px;
+        color: rgb(77, 178, 221);
+        font-family: 'Open Sans', sans-serif;
+    }
+    #header{
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        min-height: 25px;
+        z-index: 1000;
+        padding: 5%;
+        width: 100vw;
+        position: fixed;
+        font-size: 25px;
+        transition: 0.6s;
+        display: block;
+        color: rgb(255, 255, 255);
+        mix-blend-mode: exclusion;
+        }
+    #links a{
+        padding: 5px;
+        border: 1px solid rgb(223, 230, 233);
+        background-color: rgb(14, 21, 24);
+        font-weight: 300;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+
+    }
+    #links a:hover{
+        padding: 5px;
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgb(67, 144, 177);
+        font-weight: 300;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        border-bottom: 5px solid rgb(255, 255, 255);
+        transition: 0.2s;
+    }
+    #title{
+        font-size: 70px;
+        border: 0px;
+        background-color: rgba(42, 50, 53, 0);
+        transition: 0.7s;
+    }
+    #links{
+        margin-bottom: 20px;
+        transition: 0.7s;
+    }
+    .tool{
+        display:flex;        
+    }
+    .tool p{
+        border: 2px solid rgb(255, 255, 255);
+        font-size: 25px;
+        font-family: 'Open Sans', sans-serif;
+        max-width: 100rem;
+        text-align: center;
+        margin: 5px;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: royalblue;
+        color: rgb(255, 255, 255);
+        mix-blend-mode: normal;
+        transition: 0.3s;
+    }
+    .container{
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(circle, rgba(53, 128, 124, 0.591) 0%, rgba(56, 128, 157, 0.356) 22%, rgba(0,212,255,0) 61%);
+        padding: 0%;
+        width: 100vw - padding;
+    }
+    .container p{
+        width: 50vw;
+        padding: 40px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: calc(27px + 1vh);
+        color: rgb(7, 29, 39);
+        margin-bottom: 120px;
+        margin:auto;
+        margin-top: 10px;
+        font: 300;
+        line-height: 55px;
+    }
+    .container h4{
+        width: 50vw;
+        padding: 40px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: calc(35px + 1vh);
+        color: rgb(96, 114, 214);
+        margin-bottom: -80px;
+        margin:auto;
+        margin-top: 80px;
+        font: 100;
+        line-height: 55px;
+    }
+    .intro{
+        padding-left: 5vw;
+        padding-right: 80px;
+        padding-top: 40px;
+    }
+    .intro p{
+        font-size: 24px;
+    }
+    strong{
+        font-weight: normal;
+        color: rgb(41, 9, 9);
+    }
+    h4{
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 24.5px;
+        color:rgb(96, 114, 214);
+    }
+    img{
+        margin-top: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: calc(70px + 60vw);
+        box-shadow: 20px 20px rgb(96, 114, 214);
+    }
+    b{
+        color:rgb(96, 114, 214);
+    }
+    #content{
+        align-items: center;
+        justify-content: center;
+    }
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</script>

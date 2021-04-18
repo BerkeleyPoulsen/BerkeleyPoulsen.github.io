@@ -1,42 +1,362 @@
 <!DOCTYPE html>
-<HTML>
-    <head>
-        <title>Berkeley Poulsen</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!-- Header -->
-        <div class="top_div">
-            <h1 class="main_div_style__title">Berkeley Poulsen</h1>
-        </div>
-        <!-- Links -->
-        <div class="main_div__links">
-            <a href="https://www.artstation.com/bpoulsen">Art Portfolio</a>
-            <a href="https://github.com/BerkeleyPoulsen">Github</a>
-            <a href="https://www.youtube.com/watch?v=bZe5J8SVCYQ">Secret</a>
-        </div>
-        <!-- Main -->
-        <div class="main_div">
-            <div class="main_div__center">
-                <h1 class="main_div__body">Painting</h1>
-                <img src=https://cdnb.artstation.com/p/assets/images/images/012/290/037/large/berkeley-poulsen-123.jpg?1534028907>
-                <p>Rush Hour, 2018, by me</p>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <div id="header">
+        <div id="links">
+            <a>Projects</a>
+            <a>Contact Me</a>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
             </div>
-            <div class="main_div__center">
-                <h1 class="main_div__body">About Me</h1>
-                <p>My goal is to be a fully functional UI engineer by the time I leave college.That may mean doing way more than just making a website with one image.Speaking of which, the painting above, as well as about a dozen others can be seen at <span><a href="https://bpoulsen.artstation.com/">bpoulsen.artstation.com.</a></span> Let me know if you have a favorite.</p>
-            </div>
-            <div class="main_div__center">
-                <h1 class="main_div__body">Work History</h1>
-                <h1 class="main_div__resume_block"> 2016 - 2017 Administrative Assistant</h1>
-                <p>At Manorcare Potomac nursing home, I answered calls, set up appointments, parsed patient records and had general IT duties.</p>
-                <h1 class="main_div__resume_block"> 2017 - 2018 Activities Assistant and Assessment Coordinator</h1>
-                <p>My tasks were to conduct assessments of residents and patients, cooridinate their recreational well-being, and perform various clerical tasks we could have trained a monkey to do.</p>
-                <h1 class="main_div__resume_block"> 2018 - 2019 Nurse Scheduler</h1>
-                <p>My main task was to deal with an elusive population known as "nurses". I negotiated scheduling contracts, resolved scheduling conflicts, and staffed the facility for 24 hours a day, 7 days a week. Coke was not involved.</p>
-                <h1 class="main_div__resume_block"> 2019 - Weekend Scheduler</h1>
-                <p>Stockholm syndrome is a condition which causes hostages to develop a psychological alliance with their captors during captivity. These alliances result from a bond formed between captor and captives during intimate time together, but they are generally considered irrational in light of the danger or risk endured by the victims.</p>
+        <div id="title">
+            <a>BERKELEY POULSEN</a>
+        </div>
+    </div>
+    <div class="content">
+        <div id="img_2"></div>
+            <div id="introduction">
+                <p>Hi! I'm Berkeley,</p>
+                <br>
+                <p>I'm a UI artist, and web developer building projects centered around healthcare, interactive media, and digital art.</p>
+                <br>
+                <p>If you would like to get in contact with me, my email is <a href = "https://www.linkedin.com/in/berkeley-poulsen/" target="_blank">berkeley.poulsen@gmail.com</a></p>
+                <br>
+                <p><a>Scroll to view!</a></p>
             </div>
         </div>
-    </body>
-</HTML>
+        <div id="img_1">
+        </div>
+    </div>
+    <h1>PROJECTS</h1>
+    <div class="container">
+        <div class="port hvr-grow" style="background-image: url(card_bk.png);" onclick="location.href='index_em_project.html';"&nbsp;>
+            <h2>Emergency Healthcare | Redesign</h2>
+            <p>A redesign of College Park Emergency Care's web presence and appointment registration system.</p>
+            <div class="tool">
+                <p style = "background-color: rgb(202, 91, 27);">Figma</p>
+                <p style = "background-color: rgb(57, 128, 124);">UI</p>
+                <p style = "background-color: rgb(44, 74, 109);">UX</p>
+            </div>
+        </div>
+        <div class="port hvr-grow" style="background-image: url('psyc_ui.png');"onclick="location.href='index_psyc_project.html';"&nbsp;>
+            <h2>PSYC MOBILE</h2>
+            <p>An Application Mockup to help students learn Psychology, and have fun doing it.</p>
+            <div class="tool">
+                <p style = "background-color: rgb(202, 91, 27);">Figma</p>
+                <p style = "background-color: rgb(57, 128, 124);">UI</p>
+                <p style = "background-color: rgb(44, 74, 109);">UX</p>
+                <p style = "background-color: rgb(59, 16, 77);">JavaScript</p>
+            </div>
+        </div>
+        <div class="port hvr-grow" style="background-image: url('img3.jpg');">
+            <h2>PROJECT 3</h2>
+        </div>
+        <div class="port hvr-grow" style="background-image: url('img4.jpg');">
+            <h2>PROJECT 4</h2>
+        </div>
+        <div class="port hvr-grow" style="background-image: url('img1.jpg');">
+            <h2>PROJECT 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque similique iusto ullam consequatur minus exercitationem neque, beatae amet nostrum ab nulla fuga optio commodi provident quo voluptates! Labore, perferendis iure?</p>
+        </div>
+        <div class="port hvr-grow" style="background-image: url('img2.jpg');">
+            <h2>PROJECT 2</h2>
+        </div>
+    </div>
+</html>
+
+<style>
+    #introduction{
+        font-size: calc(25px + 0%);
+        position: fixed;
+        margin: 4vw;
+        margin-top: calc(34vh);
+        color: rgb(14, 45, 58);
+        z-index: 1000;
+        width: calc(250px + 15vw);
+        float: left;
+        margin-left: 10vw;
+        -webkit-user-select: none; /* Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        mix-blend-mode: multiply;
+    }
+    #introduction a{
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        color:rgb(212, 64, 27);
+        -webkit-user-select:text; /* Safari */        
+        -moz-user-select: text; /* Firefox */
+        -ms-user-select: text; /* IE10+/Edge */
+        user-select: text; /* Standard */
+    }
+    
+    #img_1{
+  /* The image used */
+        background-image: url("img_2.png"),url("img\ 1.5.png"),url("img_1.png"),url("img_0.png");
+        /* Set a specific height */
+        min-height: 1080px; 
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: auto;
+        background-repeat: no-repeat;
+        background-size: calc(100vh * 100vw);
+        background-position: right;
+        background-position-x: calc(0vw + 25%);
+        background-position-y: 0vw;
+        padding-left: 0px;
+        width: 100vw;
+    }
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    html{
+        overflow-x: hidden;
+        background-color: rgb(7, 14, 32);
+        margin:auto;
+    }
+    h1 {
+        margin-left: 10vw;
+        color: rgb(42, 50, 53);
+        font-family: 'Raleway', sans-serif;
+        font-size: 70px;
+        margin-bottom: 80px;
+        padding-top: 160px;
+        /* text-decoration: underline 5px solid rgb(42, 50, 53); */
+    }
+    h2 {
+        font-size: 30px;
+        color: rgb(190, 225, 229);
+        font-family: 'Raleway', sans-serif;
+    }
+    #header{
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        min-height: 25px;
+        z-index: 1000;
+        padding: 6%;
+        width: 100vw;
+        position: fixed;
+        font-size: 20px;
+        transition: 0.3s;
+        display: block;
+        color: rgb(255, 255, 255);
+        mix-blend-mode: exclusion;
+        }
+    .tool{
+        display: flex;
+        }
+    .tool p{
+        max-width: 100rem;
+        text-align: center;
+        margin: 10px;
+        border: 1px solid rgb(255, 255, 255);
+        background-color: royalblue;
+        margin-top: 30%;
+        -webkit-box-shadow: 0px 6px 16px 5px rgba(0,0,0,0.7);
+        -moz-box-shadow: 0px 6px 16px 5px rgba(0,0,0,0.7);
+        box-shadow: 0px 6px 16px 5px rgba(0,0,0,0.7);
+        color: rgb(255, 255, 255);
+        mix-blend-mode: normal;
+        font-weight: 700;
+    }
+    #links a{
+        padding: 5px;
+        border: 1px solid rgba(223, 230, 233,0);
+        font-weight: 300;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    #links a:hover{
+        padding: 5px;
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgb(67, 144, 177);
+        font-weight: 300;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        border-bottom: 5px solid rgb(255, 255, 255);
+        transition: 0.7s;
+    }
+    #links{
+        border: 0px solid rgb(255, 255, 255);
+        margin-bottom: 20px;
+        transition: 0.7s;
+    }
+    #header h4{
+        padding-right: 40px;
+        font-size: 25px;
+    }
+    #title{
+        font-size: 70px;
+        border: 0px;
+        background-color: rgba(42, 50, 53, 0);
+    }
+    .port{
+        padding: 40px;
+        padding-bottom: 100px;
+        margin: 3%;
+        height: 310px;
+        width: 60%;
+        background-color: rgb(115, 133, 167);
+        transition: font-size 200ms;
+        flex: 1 1 35%;
+        max-width: 33%;
+        min-width: 33%;
+    }
+
+    .port p{
+        padding: 10px;
+        font-family: 'Heebo', sans-serif;
+        font-size: calc(12px + 0.6vw);
+        color: rgb(255, 255, 255);
+
+    }
+    .container{
+        background-color: rgb(7, 14, 32);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0%;
+        width: 100vw;
+        border-top: thin rgb(14, 45, 58);
+        
+    }
+    @keyframes hvr-pulse {
+        25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        }
+        75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        }
+    }
+    @-webkit-keyframes hvr-pop {
+        50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        }
+    }
+    @keyframes hvr-pop {
+        50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        }
+    }
+    .hvr-grow {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        -webkit-box-shadow: 0px 11px 46px 5px rgba(0,0,0,1);
+        -moz-box-shadow: 0px 11px 46px 5px rgba(0,0,0,1);
+        box-shadow: 0px 11px 46px 5px rgba(0,0,0,1);
+        -webkit-transition-duration: 300ms;
+        transition-duration: 300ms;
+        -webkit-transition-property: transform;
+        transition-property: transform, font-size;
+    }
+    .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        cursor: pointer;
+        offset: 2px;
+        -webkit-box-shadow:inset 0px 0px 0px 3px rgb(158, 175, 206);
+        -moz-box-shadow:inset 0px 0px 0px 3px rgb(115, 133, 167);
+        box-shadow:inset 0px 0px 0px 3px rgb(115, 133, 167);
+    }
+    .intro{
+        padding-left: 5vw;
+        padding-right: 80px;
+        padding-top: 40px;
+    }
+    .intro p{
+        font-size: 24px;
+    }
+    strong{
+        font-weight: normal;
+        color: whitesmoke;
+    }
+    h4{
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 24.5px;
+        color:rgb(255, 101, 30);
+    }
+    body{
+        width: 100vw;
+    }
+}
+</style>
+
+
+</script>
+<script>
+    function parallax() {
+        var layer1 = document.getElementById('img_1');
+        var layer2 = document.getElementById('img_2');
+        var layer3 = document.getElementById('introduction');
+        var layer4 = document.getElementsByClassName('port');
+        layer1.style.backgroundPositionY = -(window.pageYOffset / 2)+'px,'+ -(window.pageYOffset / 3)+'px,'+ -(window.pageYOffset / 4)+'px,' +-(window.pageYOffset / 8)+'px';
+        layer2.style.backgroundPositionY = 700-(window.pageYOffset)+'px';
+        layer3.style.opacity = 1 - (window.scrollY/360);
+        layer3.style.left = window.scrollY*2+'px';
+        var i;
+        for (i = 0; i < 5; i++) {
+            layer4[i].style.backgroundPositionY = 0-(window.pageYOffset / 10)+'px';
+            layer4[i].style.backgroundPositionX = 0-(window.pageYOffset / 10)+'px';
+            };
+        };
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        /*
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        document.getElementById("introduction").style.opacity = "0";
+        document.getElementById("introduction").style.left= "2600px";
+    } else {
+        document.getElementById("introduction").style.opacity = "1";
+        document.getElementById("introduction").style.left= "0px";
+    };*/
+
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+        document.getElementById("header").style.font = "'Raleway', sans-serif";
+        document.getElementById("header").style.fontWeight = "700";
+        document.getElementById("header").style.backgroundColor = "rgba(7, 14, 32, 1)";
+        document.getElementById("header").style.borderBottom = "2px solid #2a3235";
+        document.getElementById("header").style.display = "inline-flexbox";
+        document.getElementById("header").style.padding = "25px";
+        document.getElementById("links").style.marginBottom = "5px";
+        document.getElementById("links").style.fontWeight = "300";
+        document.getElementById("links").style.fontSize = "20px";
+        document.getElementById("title").style.fontSize = "40px";
+        document.getElementById("title").style.border = "0px";
+        document.getElementById("title").style.transition = "0.7s";
+        $("#header").css("mix-blend-mode", "normal");
+
+    } else {
+        document.getElementById("header").style.fontWeight = "700";
+        document.getElementById("header").style.padding = "6%";
+        document.getElementById("header").style.backgroundColor = "rgba(217, 211, 224,0)";
+        document.getElementById("header").style.borderBottom = "0px solid #7385A7";
+        document.getElementById("header").style.display = "block";
+        document.getElementById("title").style.fontSize = "70px";
+        document.getElementById("links").style.marginBottom = "20px";
+        document.getElementById("links").style.fontSize = "20px";
+        document.getElementById("links").style.fontWeight = "300";
+        document.getElementById("title").style.border = "0px";
+        document.getElementById("title").style.transition = "0.7s";
+        $("#header").css("mix-blend-mode", "exclusion");
+        }
+    };
+    window.addEventListener("scroll", parallax, false);
+
+</script>
