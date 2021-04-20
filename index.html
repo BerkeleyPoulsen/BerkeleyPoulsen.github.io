@@ -38,18 +38,20 @@
     <div class="container">
         <div class="port hvr-grow" style="background-image: url(card_bk.png);" onclick="location.href='index_em_project.html';"&nbsp;>
             <h2>Emergency Healthcare | Redesign</h2>
-            <p>A redesign of College Park Emergency Care's web presence and appointment registration system.</p>
+            <p class = "description">A redesign of College Park Emergency Care's web presence and appointment registration system.</p>
             <div class="tool">
-                <p style = "background-color: rgb(202, 91, 27);">Figma</p>
+                <p style = "background-color: rgb(189, 58, 130);">Figma</p>
                 <p style = "background-color: rgb(57, 128, 124);">UI</p>
                 <p style = "background-color: rgb(44, 74, 109);">UX</p>
             </div>
         </div>
         <div class="port hvr-grow" style="background-image: url('psyc_ui.png');"onclick="location.href='index_psyc_project.html';"&nbsp;>
             <h2>PSYC MOBILE</h2>
-            <p>An Application Mockup to help students learn Psychology, and have fun doing it.</p>
+            <p class = "description">An Application Mockup to help students learn Psychology, and have fun doing it.
+            An Application Mockup to help students learn Psychology, and have fun doing it.</p>
+
             <div class="tool">
-                <p style = "background-color: rgb(202, 91, 27);">Figma</p>
+                <p style = "background-color: rgb(189, 58, 130);">Figma</p>
                 <p style = "background-color: rgb(57, 128, 124);">UI</p>
                 <p style = "background-color: rgb(44, 74, 109);">UX</p>
                 <p style = "background-color: rgb(59, 16, 77);">JavaScript</p>
@@ -160,12 +162,13 @@
         }
     .tool{
         display: flex;
+        position: relative;
         }
     .tool p{
         max-width: 100rem;
         text-align: center;
         margin: 10px;
-        border: 1px solid rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
         background-color: royalblue;
         -webkit-box-shadow: 0px 6px 16px 5px rgba(0,0,0,0.7);
         -moz-box-shadow: 0px 6px 16px 5px rgba(0,0,0,0.7);
@@ -173,6 +176,11 @@
         color: rgb(255, 255, 255);
         mix-blend-mode: normal;
         font-weight: 700;
+        margin-top: 11em;
+    }
+    .description{
+        height: 0px;
+        padding: 0px;
     }
     #links a{
         padding: 5px;
@@ -216,6 +224,9 @@
         flex: 1 1 40%;
         max-width: calc(20vw + 20vh);
         min-width: calc(20vw + 20vh);
+        vertical-align: bottom;
+        align-content: flex-end;
+        align-items: flex-end;
     }
 
     .port p{
