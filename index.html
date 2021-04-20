@@ -72,13 +72,12 @@
 
 <style>
     #introduction{
-        font-size: calc(25px + 0%);
-        position: fixed;
+        font-size: calc(20px);
         margin: 4vw;
-        margin-top: calc(34vh);
+        margin-top: calc(30vh + 5vw);
         color: rgb(189, 215, 230);
         z-index: 1000;
-        width: calc(250px + 15vw);
+        width: calc(250px + 20vw);
         float: left;
         margin-left: 10vw;
         -webkit-user-select: none; /* Safari */        
@@ -86,7 +85,7 @@
         -ms-user-select: none; /* IE10+/Edge */
         user-select: none; /* Standard */
         font-family: 'Lato', sans-serif;
-        font-weight: 700;
+        font-weight: 300;
         mix-blend-mode: normal;
     }
     #introduction a{
@@ -308,10 +307,9 @@
         var layer2 = document.getElementById('img_2');
         var layer3 = document.getElementById('introduction');
         var layer4 = document.getElementsByClassName('port');
-        layer1.style.backgroundPositionY = -(window.pageYOffset /4)+'px,'+ -(window.pageYOffset / 6)+'px,'+ -(window.pageYOffset / 3)+'px,' + -(window.pageYOffset / 16)+'px';
+        layer1.style.backgroundPositionY = -(window.pageYOffset /7)+'px,'+ -(window.pageYOffset / 10)+'px,'+ -(window.pageYOffset / 3)+'px,' + -(window.pageYOffset / 16)+'px';
         layer2.style.backgroundPositionY = 700-(window.pageYOffset)+'px';
         layer3.style.opacity = 1 - (window.scrollY/360);
-        layer3.style.left = window.scrollY*2+'px';
         var i;
         for (i = 0; i < 5; i++) {
             layer4[i].style.backgroundPositionY = 0-(window.pageYOffset / 10)+'px';
