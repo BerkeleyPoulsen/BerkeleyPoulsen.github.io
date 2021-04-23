@@ -2,12 +2,13 @@
 <html>
 <head>
     <title>berkeleypoulsen.github.io</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Condensed:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 </head>
 <meta charset="UTF-8">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+<canvas id = "banner"></canvas>
     <div id="header">
         <div id="links">
             <a>Projects</a>
@@ -20,7 +21,6 @@
     </div>
     <div class="content">
         <div id="img_2"></div>
-           
         </div>
         <div id="introduction">
             <p>Hi! I'm Berkeley,</p>
@@ -35,8 +35,6 @@
         <div id="img_1">
         </div>
     </div>
-    <h1>PROJECTS</h1>
-    <div class="container">
         <div class="port hvr-grow" style="background-image: url(card_bk.png);" onclick="location.href='index_em_project.html';"&nbsp;>
             <h2>Emergency Healthcare | Redesign</h2>
             <p class = "description">A redesign of College Park Emergency Care's web presence and appointment registration system.</p>
@@ -48,15 +46,14 @@
         </div>
         <div class="port hvr-grow" style="background-image: url('psyc_ui.png');"onclick="location.href='index_psyc_project.html';"&nbsp;>
             <h2>PSYC MOBILE</h2>
-            <p class = "description">An Application Mockup to help students learn Psychology, and have fun doing it.
-            An Application Mockup to help students learn Psychology, and have fun doing it.</p>
-
             <div class="tool">
                 <p style = "background-color: rgb(189, 58, 130);">Figma</p>
                 <p style = "background-color: rgb(57, 128, 124);">UI</p>
                 <p style = "background-color: rgb(44, 74, 109);">UX</p>
-                <p style = "background-color: rgb(59, 16, 77);">JavaScript</p>
             </div>
+            <p class = "description">An Application Mockup to help students learn Psychology, and have fun doing it.
+            An Application Mockup to help students learn Psychology, and have fun doing it.</p>
+
         </div>
         <div class="port hvr-grow" style="background-image: url('img3.jpg');">
             <h2>PROJECT 3</h2>
@@ -78,37 +75,33 @@
 
 <style>
     #introduction{
-        font-size: calc(3.3vh);
-        margin: 4vw;
-        margin-top: 25vmin;
-        color: rgb(63, 79, 122);
+        font-size: calc(3.7vh);
+        margin-top: 35vmin;
+        color: rgb(14, 21, 37);
         z-index: 1000;
-        width: 50%;
+        width: 50vw;
         float: left;
         margin-left: 10vw;
         -webkit-user-select: none; /* Safari */        
         -moz-user-select: none; /* Firefox */
         -ms-user-select: none; /* IE10+/Edge */
         user-select: none; /* Standard */
-        font-family: 'Lato', sans-serif;
-        font-weight: 700;
-        mix-blend-mode: multiply;
-        padding: 40px;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 300;
+        mix-blend-mode: normal;
     }
     #introduction a{
-        font-family: 'Lato', sans-serif;
-        font-weight: 700;
-        color:rgb(63, 79, 122);
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 400;
+        color:rgb(58, 40, 160);
         -webkit-user-select:text; /* Safari */        
         -moz-user-select: text; /* Firefox */
         -ms-user-select: text; /* IE10+/Edge */
         user-select: text; /* Standard */
-        mix-blend-mode: normal;
     }
     
     #img_1{
   /* The image used */
-        background-image: url("win.png"), url("window.jpg");
         /* Set a specific height */
         min-height: 1080px; 
 
@@ -116,8 +109,7 @@
         background-attachment: fixed;
         background-position: auto;
         background-repeat: no-repeat;
-        background-size: calc(80vmin * 40vw);
-        background-position: right;
+        background-size: calc(100vh + 100vw);
         background-position-x: calc(0vw + 25%);
         background-position-y: 0vw;
         padding-left: 0px;
@@ -129,9 +121,10 @@
     }
     html{
         overflow-x: hidden;
-        background-color: #fcf5dd;
+        background-color: #EBF0F8;
         margin:auto;
-        
+        width: 100vw;
+        height: 100vh;
     }
     h1{
         margin-left: 10vw;
@@ -144,7 +137,7 @@
         /* text-decoration: underline 5px solid rgb(42, 50, 53); */
     }
     h2{
-        font-size: 30px;
+        font-size: 8vh;
         color: #fcf5dd;
         font-family: 'Raleway', sans-serif;
     }
@@ -154,9 +147,9 @@
         min-height: 25px;
         z-index: 1000;
         padding: 6%;
-        width: 100vw;
+        width: 100%;
         position: fixed;
-        font-size: 20px;
+        font-size: 3vh;
         transition: 0.3s;
         display: block;
         color: rgb(255, 255, 255);
@@ -167,18 +160,19 @@
         position: relative;
         }
     .tool p{
-        max-width: 100rem;
+        max-width: 300px;
         text-align: center;
-        margin: 10px;
+        margin: 20px;
+        padding: 20px;
         border: 2px solid rgb(255, 255, 255);
-        background-color: royalblue;
+        background-color: #4169e1;
         -webkit-box-shadow: 0px 6px 16px 5px rgba(0,0,0,0.7);
         -moz-box-shadow: 0px 6px 16px 5px rgba(0,0,0,0.7);
         box-shadow: 0px 6px 16px 5px rgba(0,0,0,0.7);
         color: rgb(255, 255, 255);
         mix-blend-mode: normal;
         font-weight: 700;
-        margin-top: calc(6em + 5vw);
+        margin-top: calc(6em);
     }
     .description{
         height: 0px;
@@ -187,44 +181,44 @@
     #links a{
         padding: 10px;
         border: 1px solid rgba(223, 230, 233,0);
-        font-weight: 700;
-        color: rgb(255, 255, 255);
+        font-weight: 400;
+        color: rgb(230, 230, 238);
+        transition: 0.6s;
         text-decoration: none;
     }
     #links a:hover{
-        padding: 12px;
         border: 1px solid rgb(255, 255, 255);
-        background-color: rgb(29, 39, 180);
-        font-weight: 700;
+        font-weight: 400;
         color: rgb(255, 255, 255);
         text-decoration: none;
-        transition: 0.2s;
+        transition: 0.3s;
     }
     #links{
         border: 0px solid rgb(255, 255, 255);
         margin-bottom: 20px;
         transition: 0.7s;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: lighter;
+        
     }
     #header h4{
-        padding-right: 40px;
         font-size: 25px;
     }
     #title{
-        font-size: 70px;
+        font-size: 7vh;
         border: 0px;
         background-color: rgba(42, 50, 53, 0);
+        transition-duration: 0.3ms;
+        padding-left: 10px;
     }
     .port{
-        padding: 40px;
+        padding: 100px;
         padding-bottom: 100px;
-        margin: 3%;
-        height: 310px;
-        width: calc(15vw + 20vh);
+        height: 60vh;
+        width: 100vw;
         background-color: rgb(115, 133, 167);
         transition: font-size 200ms;
-        flex: 1 1 40%;
-        max-width: calc(20vw + 20vh);
-        min-width: calc(20vw + 20vh);
+        flex: 1 1 100%;
         vertical-align: bottom;
         align-content: flex-end;
         align-items: flex-end;
@@ -233,7 +227,7 @@
     .port p{
         padding: 10px;
         font-family: 'Heebo', sans-serif;
-        font-size: calc(22px + 0.6vh);
+        font-size: 4vh;
         color: rgb(255, 255, 255);
     }
     .container{
@@ -274,24 +268,20 @@
         vertical-align: middle;
         -webkit-transform: perspective(1px) translateZ(0);
         transform: perspective(1px) translateZ(0);
-        -webkit-box-shadow: 0px 11px 46px 5px rgb(94, 108, 121);
-        -moz-box-shadow: 0px 11px 46px 5px rgb(94, 108, 121);
-        box-shadow: 0px 11px 46px 5px rgb(94, 108, 121);
         -webkit-transition-duration: 300ms;
         transition-duration: 300ms;
         -webkit-transition-property: transform;
         transition-property: transform, font-size;
     }
     .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
+        -webkit-transform: scale(1.01);
+        transform: scale(1.01);
         cursor: pointer;
         offset: 2px;
         transition-duration: 300ms;
     }
     .intro{
         padding-left: 5vw;
-        padding-right: 80px;
         padding-top: 40px;
     }
     .intro p{
@@ -305,7 +295,7 @@
         font-family: 'Lato', sans-serif;
         font-weight: 700;
         font-size: 24.5px;
-        color:rgb(255, 101, 30);
+        color:#76beee;
     }
     body{
         width: 100vw;
@@ -315,12 +305,97 @@
         height: 600px;
         background-color: black;
     }
-}
+    #banner{
+       position: fixed;
+       padding: 0px;
+       margin: 0px;
+       width: 150%;
+       height: 150%;
+       margin-left: -200px;
+       z-index: -600;
+       
+    }
+    #background{
+        position: fixed;
+        padding: 0px;
+        margin: 0px;
+        width: 150%;
+        height: 150%;
+        margin-left: -200px;
+        z-index: -1000;
+        background: rgb(236, 246, 255);
+    }
+    @media only screen and (max-width: 600px) {
+        #introduction {
+            margin-top: 30vh;
+            width: 75%;
+        }
+    }
 </style>
 
 
 </script>
 <script>
+window.onload = function(){
+    var canvas = document.getElementById("banner");
+    var ctx = canvas.getContext("2d");
+
+    var W = Math.max(document.documentElement.clientWidth  || 0, window.innerWidth || 0) + 100;
+    var H = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) + 100
+    canvas.width = W;
+    canvas.height = H;
+
+    var maxBoxes = 40;
+    var boxes = [];
+
+    for (var i = 0; i < maxBoxes; i++){
+        boxes.push({
+            x: Math.random() * W,
+            y: Math.random() * H - 700,
+            r: Math.random() * 50 + 150,
+            d: (Math.random() + 1)/1.4
+        })
+    }
+    function drawBoxes()
+    {
+        var grd = ctx.createLinearGradient(0, 0, W, H/2);
+        grd.addColorStop(0.3, "#cce6d9");
+        grd.addColorStop(1, "rgb(115, 133, 167)");
+        grd.addColorStop(0, "#c9edf6");
+        ctx.clearRect(0,0,W,H);
+        ctx.filter = "blur(10px)"
+        ctx.beginPath();
+        for (var i = 0; i < maxBoxes; i ++){
+            var f = boxes[i];
+            ctx.moveTo(f.x, f.y)
+            ctx.arc(f.x, f.y, f.r, 0, Math.PI*2, true);
+        }
+        ctx.fillStyle = grd;
+        ctx.fill();
+        moveBoxes();
+    }
+    var angle = 0;
+
+    function moveBoxes(){
+        angle += 0.01;
+        for (var i = 0; i < maxBoxes; i++){
+            var f = boxes[i];
+
+            f.y += Math.pow(f.d, 2) + 0.2;
+            f.x += Math.sin(angle) / 2;
+
+            if (f.y > H + 500){
+                boxes[i] = {
+                    x: Math.random() * W,
+                    y: -300,
+                    r: f.r,
+                    d: f.d
+                }
+            }
+        }
+    }
+    setInterval(drawBoxes, 12);
+}
     function parallax() {
         var layer1 = document.getElementById('img_1');
         var layer2 = document.getElementById('img_2');
@@ -328,7 +403,8 @@
         var layer4 = document.getElementsByClassName('port');
         layer1.style.backgroundPositionY = -(window.pageYOffset/2)+'px,'+ -(window.pageYOffset / 7)+'px,'+ -(window.pageYOffset / 3)+'px,' + -(window.pageYOffset / 16)+'px';
         layer2.style.backgroundPositionY = 700-(window.pageYOffset)+'px';
-        layer3.style.opacity = 1 - (window.scrollY/360);
+        layer3.style.opacity = 1 - (window.scrollY/760);
+        layer3.style.positionY = -(window.scrollY/300);
         var i;
         for (i = 0; i < 5; i++) {
             layer4[i].style.backgroundPositionY = 0-(window.pageYOffset / 10)+'px';
@@ -346,31 +422,31 @@
         document.getElementById("introduction").style.left= "0px";
     };*/
 
-    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        //MAKE HEADER
         document.getElementById("header").style.font = "'Raleway', sans-serif";
-        document.getElementById("header").style.fontWeight = "700";
         document.getElementById("header").style.backgroundColor = "rgba(7, 14, 32, 1)";
-        document.getElementById("header").style.borderBottom = "2px solid #2a3235";
+        document.getElementById("header").style.borderBottom = "1px solid #ffffff";
         document.getElementById("header").style.display = "inline-flexbox";
-        document.getElementById("header").style.padding = "30px";
-        document.getElementById("links").style.marginBottom = "10px";
-        document.getElementById("links").style.fontWeight = "300";
-        document.getElementById("links").style.fontSize = "20px";
-        document.getElementById("title").style.fontSize = "40px";
+        document.getElementById("header").style.padding = "5px";
+        document.getElementById("links").style.marginBottom = "5px";
+        document.getElementById("links").style.weight = "300px";
+        document.getElementById("links").style.fontSize = "3vh";
+        document.getElementById("title").style.fontSize = "4vh";
         document.getElementById("title").style.border = "0px";
+        document.getElementById("title").style.paddingLeft = "10px";
         document.getElementById("title").style.transition = "0.7s";
         $("#header").css("mix-blend-mode", "normal");
-
     } else {
-        document.getElementById("header").style.fontWeight = "700";
+        //TITLE START
         document.getElementById("header").style.padding = "6%";
         document.getElementById("header").style.backgroundColor = "rgba(217, 211, 224,0)";
         document.getElementById("header").style.borderBottom = "0px solid #7385A7";
         document.getElementById("header").style.display = "block";
         document.getElementById("title").style.fontSize = "70px";
         document.getElementById("links").style.marginBottom = "20px";
-        document.getElementById("links").style.fontSize = "20px";
-        document.getElementById("links").style.fontWeight = "300";
+        document.getElementById("links").style.fontSize = "3vh";
+        document.getElementById("title").style.fontSize = "7vh";
         document.getElementById("title").style.border = "0px";
         document.getElementById("title").style.transition = "0.7s";
         $("#header").css("mix-blend-mode", "exclusion");

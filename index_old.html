@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>berkeleypoulsen.github.io</title>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <div id="header">
+        <div id="links">
+            <a>Projects</a>
+            <a>Contact Me</a>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        <div id="title">
+            <a>BERKELEY POULSEN</a>
+        </div>
+    </div>
+    <div class="content">
+        <div id="img_2"></div>
+           
+        </div>
+        <div id="introduction">
+            <p>Hi! I'm Berkeley,</p>
+            <br>
+            <p>I'm a UI artist, and web developer building projects centered around healthcare, interactive media, and digital art.</p>
+            <br>
+            <p>If you would like to get in contact with me, my email is:</p>
+            <br>
+            <a href = "https://www.linkedin.com/in/berkeley-poulsen/" target="_blank">berkeley.poulsen @gmail.com</a>
+            <p></p>
+        </div>
+        <div id="img_1">
+        </div>
+    </div>
+    <h1>PROJECTS</h1>
+    <div class="container">
+        <div class="port hvr-grow" style="background-image: url(card_bk.png);" onclick="location.href='index_em_project.html';"&nbsp;>
+            <h2>Emergency Healthcare | Redesign</h2>
+            <p class = "description">A redesign of College Park Emergency Care's web presence and appointment registration system.</p>
+            <div class="tool">
+                <p style = "background-color: rgb(189, 58, 130);">Figma</p>
+                <p style = "background-color: rgb(57, 128, 124);">UI</p>
+                <p style = "background-color: rgb(44, 74, 109);">UX</p>
+            </div>
+        </div>
+        <div class="port hvr-grow" style="background-image: url('psyc_ui.png');"onclick="location.href='index_psyc_project.html';"&nbsp;>
+            <h2>PSYC MOBILE</h2>
+            <p class = "description">An Application Mockup to help students learn Psychology, and have fun doing it.
+            An Application Mockup to help students learn Psychology, and have fun doing it.</p>
+
+            <div class="tool">
+                <p style = "background-color: rgb(189, 58, 130);">Figma</p>
+                <p style = "background-color: rgb(57, 128, 124);">UI</p>
+                <p style = "background-color: rgb(44, 74, 109);">UX</p>
+                <p style = "background-color: rgb(59, 16, 77);">JavaScript</p>
+            </div>
+        </div>
+        <div class="port hvr-grow" style="background-image: url('img3.jpg');">
+            <h2>PROJECT 3</h2>
+        </div>
+        <div class="port hvr-grow" style="background-image: url('img4.jpg');">
+            <h2>PROJECT 4</h2>
+        </div>
+        <div class="port hvr-grow" style="background-image: url('img1.jpg');">
+            <h2>PROJECT 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque similique iusto ullam consequatur minus exercitationem neque, beatae amet nostrum ab nulla fuga optio commodi provident quo voluptates! Labore, perferendis iure?</p>
+        </div>
+        <div class="port hvr-grow" style="background-image: url('img2.jpg');">
+            <h2>PROJECT 2</h2>
+        </div>
+    </div>
+    <footer>
+    </footer>
+</html>
+
+<style>
+    #introduction{
+        font-size: calc(3.3vh);
+        margin: 4vw;
+        margin-top: 25vmin;
+        color: rgb(63, 79, 122);
+        z-index: 1000;
+        width: 50%;
+        float: left;
+        margin-left: 10vw;
+        -webkit-user-select: none; /* Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        mix-blend-mode: multiply;
+        padding: 40px;
+    }
+    #introduction a{
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        color:rgb(63, 79, 122);
+        -webkit-user-select:text; /* Safari */        
+        -moz-user-select: text; /* Firefox */
+        -ms-user-select: text; /* IE10+/Edge */
+        user-select: text; /* Standard */
+        mix-blend-mode: normal;
+    }
+    
+    #img_1{
+  /* The image used */
+        background-image: url("win.png"), url("window.jpg");
+        /* Set a specific height */
+        min-height: 1080px; 
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: auto;
+        background-repeat: no-repeat;
+        background-size: calc(80vmin * 40vw);
+        background-position: right;
+        background-position-x: calc(0vw + 25%);
+        background-position-y: 0vw;
+        padding-left: 0px;
+        width: 100vw;
+    }
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    html{
+        overflow-x: hidden;
+        background-color: #fcf5dd;
+        margin:auto;
+        
+    }
+    h1{
+        margin-left: 10vw;
+        color: rgb(42, 50, 53);
+        font-family: 'Raleway', sans-serif;
+        font-size: 70px;
+        margin-bottom: 80px;
+        padding-top: 30vh;
+        margin-top: 10vh;
+        /* text-decoration: underline 5px solid rgb(42, 50, 53); */
+    }
+    h2{
+        font-size: 30px;
+        color: #fcf5dd;
+        font-family: 'Raleway', sans-serif;
+    }
+    #header{
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        min-height: 25px;
+        z-index: 1000;
+        padding: 6%;
+        width: 100vw;
+        position: fixed;
+        font-size: 20px;
+        transition: 0.3s;
+        display: block;
+        color: rgb(255, 255, 255);
+        mix-blend-mode: exclusion;
+        }
+    .tool{
+        display: flex;
+        position: relative;
+        }
+    .tool p{
+        max-width: 100rem;
+        text-align: center;
+        margin: 10px;
+        border: 2px solid rgb(255, 255, 255);
+        background-color: royalblue;
+        -webkit-box-shadow: 0px 6px 16px 5px rgba(0,0,0,0.7);
+        -moz-box-shadow: 0px 6px 16px 5px rgba(0,0,0,0.7);
+        box-shadow: 0px 6px 16px 5px rgba(0,0,0,0.7);
+        color: rgb(255, 255, 255);
+        mix-blend-mode: normal;
+        font-weight: 700;
+        margin-top: 8em;
+    }
+    .description{
+        height: 0px;
+        padding: 0px;
+    }
+    #links a{
+        padding: 10px;
+        border: 1px solid rgba(223, 230, 233,0);
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    #links a:hover{
+        padding: 12px;
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgb(29, 39, 180);
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        transition: 0.2s;
+    }
+    #links{
+        border: 0px solid rgb(255, 255, 255);
+        margin-bottom: 20px;
+        transition: 0.7s;
+    }
+    #header h4{
+        padding-right: 40px;
+        font-size: 25px;
+    }
+    #title{
+        font-size: 70px;
+        border: 0px;
+        background-color: rgba(42, 50, 53, 0);
+    }
+    .port{
+        padding: 40px;
+        padding-bottom: 100px;
+        margin: 3%;
+        height: 310px;
+        width: calc(15vw + 20vh);
+        background-color: rgb(115, 133, 167);
+        transition: font-size 200ms;
+        flex: 1 1 40%;
+        max-width: calc(20vw + 20vh);
+        min-width: calc(20vw + 20vh);
+        vertical-align: bottom;
+        align-content: flex-end;
+        align-items: flex-end;
+        border-radius: 20px;
+    }
+
+    .port p{
+        padding: 10px;
+        font-family: 'Heebo', sans-serif;
+        font-size: calc(22px + 0.6vh);
+        color: rgb(255, 255, 255);
+    }
+    .container{
+        background-color: #fcf5dd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100vw;
+        margin-bottom: 20vh;
+    }
+    @keyframes hvr-pulse {
+        25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        }
+        75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        }
+    }
+    @-webkit-keyframes hvr-pop {
+        50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        transition-duration: 300ms;
+        }
+    }
+    @keyframes hvr-pop {
+        50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        transition-duration: 300ms;
+        }
+    }
+    .hvr-grow {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        -webkit-box-shadow: 0px 11px 46px 5px rgb(94, 108, 121);
+        -moz-box-shadow: 0px 11px 46px 5px rgb(94, 108, 121);
+        box-shadow: 0px 11px 46px 5px rgb(94, 108, 121);
+        -webkit-transition-duration: 300ms;
+        transition-duration: 300ms;
+        -webkit-transition-property: transform;
+        transition-property: transform, font-size;
+    }
+    .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        cursor: pointer;
+        offset: 2px;
+        transition-duration: 300ms;
+    }
+    .intro{
+        padding-left: 5vw;
+        padding-right: 80px;
+        padding-top: 40px;
+    }
+    .intro p{
+        font-size: 24px;
+    }
+    strong{
+        font-weight: normal;
+        color: whitesmoke;
+    }
+    h4{
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 24.5px;
+        color:rgb(255, 101, 30);
+    }
+    body{
+        width: 100vw;
+    }
+    footer{
+        width: 100vw;
+        height: 600px;
+        background-color: black;
+    }
+}
+</style>
+
+
+</script>
+<script>
+    function parallax() {
+        var layer1 = document.getElementById('img_1');
+        var layer2 = document.getElementById('img_2');
+        var layer3 = document.getElementById('introduction');
+        var layer4 = document.getElementsByClassName('port');
+        layer1.style.backgroundPositionY = -(window.pageYOffset/2)+'px,'+ -(window.pageYOffset / 7)+'px,'+ -(window.pageYOffset / 3)+'px,' + -(window.pageYOffset / 16)+'px';
+        layer2.style.backgroundPositionY = 700-(window.pageYOffset)+'px';
+        layer3.style.opacity = 1 - (window.scrollY/360);
+        var i;
+        for (i = 0; i < 5; i++) {
+            layer4[i].style.backgroundPositionY = 0-(window.pageYOffset / 10)+'px';
+            layer4[i].style.backgroundPositionX = 0-(window.pageYOffset / 10)+'px';
+            };
+        };
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        /*
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        document.getElementById("introduction").style.opacity = "0";
+        document.getElementById("introduction").style.left= "2600px";
+    } else {
+        document.getElementById("introduction").style.opacity = "1";
+        document.getElementById("introduction").style.left= "0px";
+    };*/
+
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+        document.getElementById("header").style.font = "'Raleway', sans-serif";
+        document.getElementById("header").style.fontWeight = "700";
+        document.getElementById("header").style.backgroundColor = "rgba(7, 14, 32, 1)";
+        document.getElementById("header").style.borderBottom = "2px solid #2a3235";
+        document.getElementById("header").style.display = "inline-flexbox";
+        document.getElementById("header").style.padding = "30px";
+        document.getElementById("links").style.marginBottom = "10px";
+        document.getElementById("links").style.fontWeight = "300";
+        document.getElementById("links").style.fontSize = "20px";
+        document.getElementById("title").style.fontSize = "40px";
+        document.getElementById("title").style.border = "0px";
+        document.getElementById("title").style.transition = "0.7s";
+        $("#header").css("mix-blend-mode", "normal");
+
+    } else {
+        document.getElementById("header").style.fontWeight = "700";
+        document.getElementById("header").style.padding = "6%";
+        document.getElementById("header").style.backgroundColor = "rgba(217, 211, 224,0)";
+        document.getElementById("header").style.borderBottom = "0px solid #7385A7";
+        document.getElementById("header").style.display = "block";
+        document.getElementById("title").style.fontSize = "70px";
+        document.getElementById("links").style.marginBottom = "20px";
+        document.getElementById("links").style.fontSize = "20px";
+        document.getElementById("links").style.fontWeight = "300";
+        document.getElementById("title").style.border = "0px";
+        document.getElementById("title").style.transition = "0.7s";
+        $("#header").css("mix-blend-mode", "exclusion");
+        }
+    };
+    window.addEventListener("scroll", parallax, false);
+
+</script>
