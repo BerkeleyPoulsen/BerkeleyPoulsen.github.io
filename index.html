@@ -340,27 +340,34 @@ window.onload = function(){
     var canvas = document.getElementById("banner");
     var ctx = canvas.getContext("2d");
 
-    var W = Math.max(document.documentElement.clientWidth  || 0, window.innerWidth || 0) + 100;
-    var H = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) + 100
+    var W = Math.max(document.documentElement.clientWidth);
+    var H = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
     canvas.width = W;
     canvas.height = H;
 
     var maxBoxes = 40;
     var boxes = [];
-
+    function getWidth(){
+        var x = window.matchMedia("(max-width: 700px)")
+        if (x.matches){
+            return Math.random() * 40 + 40
+        }else{
+            return Math.random() * 100 + 160
+        }
+    }
     for (var i = 0; i < maxBoxes; i++){
         boxes.push({
             x: Math.random() * W,
             y: Math.random() * H - 700,
-            r: Math.random() * 50 + 150,
-            d: (Math.random() + 1)/1.4
+            r: getWidth(),
+            d: (Math.random() + 1)/2.3
         })
     }
     function drawBoxes()
     {
         var grd = ctx.createLinearGradient(0, 0, W, H/2);
-        grd.addColorStop(0.3, "#cce6d9");
-        grd.addColorStop(1, "rgb(115, 133, 167)");
+        grd.addColorStop(0.3, "#cFe6d9");
+        grd.addColorStop(1, "rgb(145, 183, 197)");
         grd.addColorStop(0, "#c9edf6");
         ctx.clearRect(0,0,W,H);
         ctx.filter = "blur(10px)"
@@ -380,7 +387,6 @@ window.onload = function(){
         angle += 0.01;
         for (var i = 0; i < maxBoxes; i++){
             var f = boxes[i];
-
             f.y += Math.pow(f.d, 2) + 0.2;
             f.x += Math.sin(angle) / 2;
 
