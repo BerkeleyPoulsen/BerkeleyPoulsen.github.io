@@ -349,7 +349,7 @@ window.onload = function(){
     canvas.width = W;
     canvas.height = H;
 
-    var maxBoxes = 40;
+    var maxBoxes = 50;
     var boxes = [];
     function getWidth(){
         var x = window.matchMedia("(max-width: 700px)")
@@ -374,7 +374,7 @@ window.onload = function(){
         grd.addColorStop(1, "rgb(145, 183, 197)");
         grd.addColorStop(0, "#c9edf6");
         ctx.clearRect(0,0,W,H);
-        ctx.filter = "blur(10px)"
+        //ctx.filter = "blur(10px)"
         ctx.beginPath();
         for (var i = 0; i < maxBoxes; i ++){
             var f = boxes[i];
@@ -383,6 +383,7 @@ window.onload = function(){
         }
         ctx.fillStyle = grd;
         ctx.fill();
+        canvas.style.webkitFilter = "blur(10px)";
         moveBoxes();
     }
     var angle = 0;
@@ -407,6 +408,7 @@ window.onload = function(){
     setInterval(drawBoxes, 12);
 }
     function parallax() {
+
         var layer1 = document.getElementById('img_1');
         var layer2 = document.getElementById('img_2');
         var layer3 = document.getElementById('introduction');
