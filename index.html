@@ -230,6 +230,7 @@
         height: 100vh;
         padding: 100px;
         height: 70vh;
+        
     }
     .port{
         padding: 5vh;
@@ -273,7 +274,7 @@
         justify-content: center;
         flex-wrap: wrap;
         width: 100vw;
-        margin-bottom: 20vh;  
+        margin-bottom: 20vh;
     }
     @keyframes hvr-pulse {
         25% {
@@ -355,8 +356,7 @@
        width: 150%;
        height: 150%;
        margin-left: -200px;
-       z-index: -600;
-       
+       z-index: -600;       
     }
     #background{
         position: fixed;
@@ -364,7 +364,6 @@
         margin: 0px;
         width: 150%;
         height: 150%;
-        margin-left: -200px;
         z-index: -1000;
         background: rgb(236, 246, 255);
     }
@@ -388,7 +387,8 @@
         }
         .portSecondary{
             width: 85vw;
-            height: 50vh;
+            height: 40vh;
+            font-weight: 300;
         }
         .port{
             width: 100vw;
@@ -403,6 +403,9 @@
         }
         .tool p{
             margin-top: -70px;
+            font-size: 20px;
+            text-align: center;
+            height: 25px;
         }
     }
 </style>
@@ -453,7 +456,7 @@ window.onload = function(){
         }
         ctx.fillStyle = grd;
         ctx.fill();
-        canvas.style.webkitFilter = "blur(20px)";
+        canvas.style.webkitFilter = "blur(5px)";
         moveBoxes();
     }
     var angle = 0;
@@ -531,5 +534,9 @@ window.onload = function(){
     };
     window.addEventListener("scroll", parallax, false);
     scrollFunction();
-
+    
+var canvas = document.getElementById("top");
+var ctx = canvas.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText("Hello World", 10, 50); 
 </script>
