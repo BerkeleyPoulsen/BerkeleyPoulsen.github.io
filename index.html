@@ -14,23 +14,18 @@
             <a>Projects</a>
             <a>Contact Me</a>
             <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-            </div>
+        </div>
         <div id="title">
-            <a>BERKELEY POULSEN</a>
+            <p id="hi">Hi I'm</p>
+            <a>BERKELEY</a>
         </div>
     </div>
     <div class="content">
         <div id="img_2"></div>
         </div>
         <div id="introduction">
-            <p>Hi! I'm Berkeley,</p>
             <br>
             <p>I'm a UI artist, UX specialist, and web developer building projects centered around healthcare, interactive media, and digital art.</p>
-            <br>
-            <p>If you would like to get in contact with me, my email is:</p>
-            <br>
-            <a href = "https://www.linkedin.com/in/berkeley-poulsen/" target="_blank">berkeley.poulsen @gmail.com</a>
-            <p></p>
         </div>
         <div id="img_1">
         </div>
@@ -51,7 +46,6 @@
         </div>
         <div class="portContainer">
             <div class="port hvr-grow" style="background-image: url('psyc_mobile.jpg');" onclick="location.href='index_em_project.html';"&nbsp;>
-            
             </div>
             <div class="portSecondary">
                 <div class="tool">
@@ -86,11 +80,11 @@
         overflow-x:hidden
     }
     #introduction{
-        font-size: calc(3.7vh);
+        font-size: calc(4.7vh);
         margin-top: 27vmin;
         color: rgb(14, 21, 37);
         z-index: 1000;
-        width: 50vw;
+        width: 30vw;
         float: left;
         margin-left: 10vw;
         -webkit-user-select: none; /* Safari */        
@@ -100,6 +94,7 @@
         font-family: 'Roboto Condensed', sans-serif;
         font-weight: 300;
         mix-blend-mode: normal;
+
     }
     #introduction a{
         font-family: 'Roboto Condensed', sans-serif;
@@ -110,19 +105,22 @@
         -ms-user-select: text; /* IE10+/Edge */
         user-select: text; /* Standard */
     }
+    #hi{
+        font-size: 30px;
+    }
     
     #img_1{
   /* The image used */
         /* Set a specific height */
         min-height: 100vh; 
-
+        background-image: url(berk.png);
+        background-position-y: 0px;
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
         background-position: auto;
         background-repeat: no-repeat;
-        background-size: calc(100vh + 100vw);
-        background-position-x: calc(0vw + 25%);
-        background-position-y: 0vw;
+        background-size: calc(40vh + 40vw);
+        background-position-x: calc(30vw + 25%);
         padding-left: 0px;
         width: 100vw;
     }
@@ -153,11 +151,11 @@
         font-weight: bold;
         min-height: 25px;
         z-index: 1000;
-        padding: 6%;
+        padding: 25%;
         width: 100%;
         position: fixed;
         font-size: 3vh;
-        transition: 0.3s;
+        transition: 1s;
         display: block;
         color: rgb(255, 255, 255);
         mix-blend-mode: exclusion;
@@ -167,17 +165,20 @@
         height: 0px;
         padding: 0px;
     }
+
     #links a{
         padding: 10px;
         border: 1px solid rgba(223, 230, 233,0);
-        font-weight: 400;
+        font-weight: 100;
         color: rgb(230, 230, 238);
         transition: 0.6s;
         text-decoration: none;
+        float: right;
+        margin-right: 50px;
     }
     #links a:hover{
         border: 1px solid rgb(255, 255, 255);
-        font-weight: 400;
+        font-weight: 100;
         color: rgb(255, 255, 255);
         text-decoration: none;
         transition: 0.3s;
@@ -185,10 +186,10 @@
     #links{
         border: 0px solid rgb(255, 255, 255);
         margin-bottom: 20px;
-        transition: 0.7s;
+        transition: 0.5s;
+        margin-right: 200px;
         font-family: 'Roboto Condensed', sans-serif;
         font-weight: lighter;
-        
     }
     .tool{
         display: flex;
@@ -369,43 +370,74 @@
     }
     @media only screen and (max-width: 800px) {
         #introduction {
-            margin-top: 20vh;
-            width: 75%;
+            margin-top: 3vh;
+            width: 55%;
+        }#header a{
+            font-weight: 100;
         }
         #header{
             justify-content: center;
             align-items: center;
             text-align: center;
             width: 100vw;
+            position: static;
             margin-right: 50px;
             margin-left: -20px;
+            font-weight: 700;
         }
         .portContainer{
-            padding: 0px;
-            padding-bottom: 200%;
             display: block;
+            padding: 0px;
+            width: 50vw;
+            padding-bottom: 500px;
+            margin-left: 10vw;
         }
         .portSecondary{
-            width: 85vw;
-            height: 40vh;
+            width: 70vw;
+            height: 60vh;
             font-weight: 300;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -40px;
+            padding-top: 400px;
+            padding:20px;
+            border-radius: 20px;
         }
         .port{
-            width: 100vw;
-            border-left: 0px;
-            border-top: 5px solid #000;
+            width: 70vw;
+            border-left: 5px;
+            border: 4px solid rgb(15, 14, 26);
             padding-bottom: 200px;
-            height: 20vh;
+            height: 30vh;
+            padding:15.4px;
             background-size: 160%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            
+            
         }
         .port p{
             width: 80vw;
         }
+        .tool{
+            text-align: center;
+        }
         .tool p{
-            margin-top: -70px;
+            margin-top: 35px;
             font-size: 20px;
             text-align: center;
             height: 25px;
+        }#img_1{
+            background-position-y: 150px;
+        }#links{
+            display: inline;
+            padding: 0px;
+        }#links a{
+            display: inline;
+            padding: 0px;
         }
     }
 </style>
@@ -413,7 +445,7 @@
 
 </script>
 <script>
-window.onload = function(){
+    window.onload = function(){
     var canvas = document.getElementById("banner");
     var ctx = canvas.getContext("2d");
 
@@ -427,9 +459,9 @@ window.onload = function(){
     function getWidth(){
         var x = window.matchMedia("(max-width: 800px)")
         if (x.matches){
-            return Math.random() * 40 + 40
+            return Math.random() * 5 + 2
         }else{
-            return Math.random() * 100 + 160
+            return Math.random() * 10 + 2
         }
     }
     for (var i = 0; i < maxBoxes; i++){
@@ -456,7 +488,6 @@ window.onload = function(){
         }
         ctx.fillStyle = grd;
         ctx.fill();
-        canvas.style.webkitFilter = "blur(5px)";
         moveBoxes();
     }
     var angle = 0;
@@ -481,15 +512,17 @@ window.onload = function(){
     setInterval(drawBoxes, 25);
 }
     function parallax() {
-
+        var x = window.matchMedia("(max-width: 800px)");
         var layer1 = document.getElementById('img_1');
         var layer2 = document.getElementById('img_2');
         var layer3 = document.getElementById('introduction');
         var layer4 = document.getElementsByClassName('port');
-        layer1.style.backgroundPositionY = -(window.pageYOffset/2)+'px,'+ -(window.pageYOffset / 7)+'px,'+ -(window.pageYOffset / 3)+'px,' + -(window.pageYOffset / 16)+'px';
-        layer2.style.backgroundPositionY = 700-(window.pageYOffset)+'px';
-        layer3.style.opacity = 1 - (window.scrollY/760);
-        layer3.style.positionY = -(window.scrollY/300);
+            if (x.matches){
+                layer1.style.backgroundPositionY = 150+"px"
+            }
+            else{
+            layer1.style.backgroundPositionY  = -(window.scrollY/3)+"px";
+            }
         };
     window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
@@ -516,6 +549,7 @@ window.onload = function(){
         document.getElementById("title").style.border = "0px";
         document.getElementById("title").style.paddingLeft = "10px";
         document.getElementById("title").style.transition = "0.7s";
+        document.getElementById("hi").innerHTML = "";
         $("#header").css("mix-blend-mode", "normal");
     } else {
         //TITLE START
@@ -529,6 +563,7 @@ window.onload = function(){
         document.getElementById("title").style.fontSize = "7vh";
         document.getElementById("title").style.border = "0px";
         document.getElementById("title").style.transition = "0.7s";
+        document.getElementById("hi").innerHTML = "Hi, I'm";
         $("#header").css("mix-blend-mode", "exclusion");
         }
     };
