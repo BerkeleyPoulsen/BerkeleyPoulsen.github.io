@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Berkeley Poulsen</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Condensed:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <meta charset="UTF-8">
@@ -135,32 +139,44 @@
         font-weight: bold;
         min-height: 25px;
         z-index: 1000;
-        padding: 5%;
-        width: 100vw;
+        padding: 25%;
+        width: 100%;
         position: fixed;
-        font-size: 25px;
-        transition: 0.6s;
+        font-size: 3vh;
+        transition: 1s;
         display: block;
         color: rgb(255, 255, 255);
         mix-blend-mode: exclusion;
-        }
+        overflow-x:hidden
+    }
+    .description{
+        height: 0px;
+        padding: 0px;
+    }
+
     #links a{
-        padding: 5px;
+        padding: 10px;
         border: 1px solid rgba(223, 230, 233,0);
-        font-weight: 300;
-        color: rgb(255, 255, 255);
+        font-weight: 100;
+        color: rgb(230, 230, 238);
+        transition: 0.6s;
         text-decoration: none;
-                font-size: 20px;
+        float: right;
+        margin-right: 50px;
     }
     #links a:hover{
-        padding: 5px;
         border: 1px solid rgb(255, 255, 255);
-        background-color: rgb(67, 144, 177);
-        font-weight: 300;
+        font-weight: 100;
         color: rgb(255, 255, 255);
         text-decoration: none;
-        border-bottom: 5px solid rgb(255, 255, 255);
-        transition: 0.7s;
+        transition: 0.3s;
+    }
+    #links{
+        border: 0px solid rgb(255, 255, 255);
+        margin-bottom: 20px;
+        transition: 0.5s;
+        margin-right: 200px;
+        font-family: 'Roboto Condensed', sans-serif;
     }
     #title{
         font-size: 70px;
@@ -195,7 +211,7 @@
     .container{
         align-items: center;
         justify-content: center;
-        background: radial-gradient(circle, rgba(128, 201, 197, 0.591) 0%, rgba(56, 128, 157, 0.356) 22%, rgba(0,212,255,0) 61%);
+        background: radial-gradient(circle, rgba(221, 252, 250, 0.591) 0%, rgba(195, 226, 238, 0.356) 22%, rgba(0,212,255,0) 61%);
         padding: 0%;
         width: 100vw - padding;
     }
@@ -257,7 +273,80 @@
         align-items: center;
         justify-content: center;
     }
+    @media only screen and (max-width: 800px) {
+        #introduction {
+            margin-top: 3vh;
+            width: 55%;
+        }#header a{
+            font-weight: 100;
+        }
+        #header{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100vw;
+            position: static;
+            margin-right: 50px;
+            margin-left: -20px;
+            font-weight: 700;
+        }
+        .portContainer{
+            display: block;
+            padding: 0px;
+            width: 50vw;
+            padding-bottom: 500px;
+            margin-left: 10vw;
+        }
+        .portSecondary{
+            width: 70vw;
+            height: calc(90vh + 20px);
+            font-weight: 300;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -40px;
+            padding-top: 400px;
+            padding:20px;
+            border-radius: 20px;
+        }
+        .portSecondary h2{
+            padding-bottom: 30px;
+        }
+        .port{
+            width: 70vw;
+            border-left: 5px;
+            border: 4px solid rgb(15, 14, 26);
+            padding-bottom: 200px;
+            height: 30vh;
+            padding:15.4px;
+            background-size: 160%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            
+        }
+        .port p{
+            width: 80vw;
+        }
+        .tool p{
+            margin-top: 25px;
+            font-size: 15px;
+            text-align: center;
+            height: 25px;
+        }#img_1{
+            background-position-y: 150px;
+        }#links{
+            display: inline;
+            padding: 0px;
+            text-align: center;
 
+        }#links a{
+            display: inline;
+            padding: 0px;
+            margin-right: 30px;
+        }
+    }
 }
 </style>
 
@@ -288,15 +377,16 @@
     if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
         //HEADER ACTIVE
         document.getElementById("header").style.font = "'Raleway', sans-serif";
-        document.getElementById("header").style.fontWeight = "700";
-        document.getElementById("header").style.backgroundColor = "rgba(14, 21, 24, 1)";
-        document.getElementById("header").style.borderBottom = "2px solid #2a3235";
+        document.getElementById("header").style.backgroundColor = "rgba(15, 14, 26, 1)";
+        document.getElementById("header").style.borderBottom = "1px solid #ffffff";
         document.getElementById("header").style.display = "inline-flexbox";
-        document.getElementById("header").style.padding = "20px";
-        document.getElementById("links").style.marginBottom = "7px";
-        document.getElementById("links").style.fontWeight = "300";
-        document.getElementById("title").style.fontSize = "52px";
+        document.getElementById("header").style.padding = "10px";
+        document.getElementById("links").style.marginBottom = "5px";
+        document.getElementById("links").style.weight = "300px";
+        document.getElementById("links").style.fontSize = "2.5vh";
+        document.getElementById("title").style.fontSize = "4vh";
         document.getElementById("title").style.border = "0px";
+        document.getElementById("title").style.paddingLeft = "10px";
         document.getElementById("title").style.transition = "0.7s";
         $("#header").css("mix-blend-mode", "normal");
         $(".tool p").css("font-size", "13px");
@@ -304,13 +394,14 @@
 
     } else {
         //HEADER INACTIVE, TITLE ON
-        document.getElementById("header").style.fontWeight = "700";
-        document.getElementById("header").style.padding = "5%";
+        document.getElementById("header").style.padding = "6%";
         document.getElementById("header").style.backgroundColor = "rgba(217, 211, 224,0)";
         document.getElementById("header").style.borderBottom = "0px solid #7385A7";
         document.getElementById("header").style.display = "block";
         document.getElementById("title").style.fontSize = "70px";
         document.getElementById("links").style.marginBottom = "20px";
+        document.getElementById("links").style.fontSize = "3vh";
+        document.getElementById("title").style.fontSize = "7vh";
         document.getElementById("title").style.border = "0px";
         document.getElementById("title").style.transition = "0.7s";
         $("#header").css("mix-blend-mode", "exclusion");
@@ -319,5 +410,6 @@
         }
     };
     window.addEventListener("scroll", parallax, false);
+    scrollFunction();
 
 </script>
