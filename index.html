@@ -8,7 +8,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <meta charset="UTF-8">
-<canvas id = "banner"></canvas>
+<body>
+    <svg id="rectangle12"></svg>
+    <svg id="rectangle7"></svg>
+    <svg id="rectangle5"></svg>
+    <svg id="rectangle3"></svg>
+    <svg id="rectangle4"></svg>
+    <svg id="rectangle2"></svg>
     <div id="header">
         <div id="links">
             <a>Projects</a>
@@ -71,18 +77,93 @@
             <h2>PROJECT 2</h2>
         </div> -->
     </div>
+</body>
     <footer>
     </footer>
 </html>
 
 <style>
+    /* Rectangle 4 */
+    #rectangle4{
+        position: absolute;
+        width: 419.72px;
+        height: 419.72px;
+        left: 430.71px;
+        top: 740px;
+
+        background: linear-gradient(180deg, #1B1B2D 0%, #214D5A 100%);
+        box-shadow: 40px 25px 0px #111213;
+        border-radius: 99px;
+        transform: rotate(38.4deg);
+    }
+
+
+    /* Rectangle 2 */
+    #rectangle2{
+    position: absolute;
+    width: 662.48px;
+    height: 662.48px;
+    left: 1028.63px;
+    top: 365px;
+
+    background: linear-gradient(180deg, #1B1B2D 0%, #3B7A8E 100%);
+    border: 2px solid #FC7373;
+    box-sizing: border-box;
+    box-shadow: 92px 2px 0px #111213;
+    border-radius: 200px;
+    transform: rotate(38.4deg);
+    }
+
+
+    /* Rectangle 5 */
+    #rectangle5{
+    position: absolute;
+    width: 337.85px;
+    height: 337.85px;
+    left: 1098px;
+    top: -160.49px;
+
+    background: linear-gradient(180deg, #1B1B2D 0%, #214D5A 100%);
+    border: 2px solid #FC7373;
+    box-sizing: border-box;
+    border-radius: 113px;
+    transform: rotate(-63.98deg);
+    }
+
+
+    /* Rectangle 3 */
+    #rectangle3{
+    position: absolute;
+    width: 626.76px;
+    height: 626.76px;
+    left: 1429px;
+    top: 98.86px;
+
+    background: linear-gradient(180deg, #1B1B2D 0%, #214D5A 100%);
+    border-radius: 200px;
+    transform: rotate(-77.06deg);
+
+    }
+    /* Rectangle 12 */
+    #rectangle12{
+    position: absolute;
+    width: 728.09px;
+    height: 708.8px;
+    left: 1330.35px;
+    top: 651px;
+
+    background: linear-gradient(180deg, #1B1B2D 0%, #335A67 100%);
+    box-shadow: 42px 40px 0px #111213;
+    border-radius: 200px;
+    transform: rotate(17.89deg);
+    }
     body{
         overflow-x:hidden
     }
     #introduction{
         font-size: calc(4.7vh);
         margin-top: 27vmin;
-        color: rgb(14, 21, 37);
+        color: rgb(200, 209, 230);
         z-index: 1000;
         width: 30vw;
         float: left;
@@ -113,7 +194,6 @@
   /* The image used */
         /* Set a specific height */
         min-height: 100vh; 
-        background-image: url(berk.png);
         background-position-y: 0px;
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
@@ -130,7 +210,7 @@
     }
     html{
         overflow-x: hidden;
-        background-color: #EBF0F8;
+        background-color: rgb(19, 19, 20);
         margin:auto;
         width: 100vw;
         height: 100vh;
@@ -326,6 +406,19 @@
         -moz-box-shadow:inset 5px 5px 0px 3px rgba(201, 226, 236, 1);
         box-shadow:inset 0px 0px 60px 3px rgba(201, 226, 236, 1);
     }
+    /* Rectangle 7 */
+    #rectangle7{
+    position: absolute;
+    width: 4592px;
+    height: 2188px;
+    left: -934px;
+    top: 2495px;
+    z-index: -1000;
+    background: linear-gradient(180deg, #16191B 0%, #263B50 100%);
+    box-shadow: 12px 12px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1094px;
+    transform: rotate(-90deg);
+    }
     .intro{
         padding-left: 5vw;
         padding-top: 40px;
@@ -442,6 +535,7 @@
             padding: 0px;
             margin-right: 30px;
         }
+        
     }
 </style>
 
@@ -541,7 +635,7 @@
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0 || (x.matches)){
         //MAKE HEADER
         document.getElementById("header").style.font = "'Raleway', sans-serif";
-        document.getElementById("header").style.backgroundColor = "rgba(15, 14, 26, 1)";
+        document.getElementById("header").style.backgroundColor = "rgba(19, 19, 20,1)";
         document.getElementById("header").style.borderBottom = "1px solid #ffffff";
         document.getElementById("header").style.display = "inline-flexbox";
         document.getElementById("header").style.padding = "10px";
