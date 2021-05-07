@@ -37,31 +37,12 @@
         </div>
     </div>
         <div class="portContainer">
-            <div class="port hvr-grow" style="background-image: url(em_new.jpg);" onclick="location.href='index_psyc_project.html'">
-            
-            </div>
-            <div class="portSecondary">
-                <div class="tool">
-                    <p style="border-color: rgb(96, 238, 195);">Figma</p>
-                    <p style="border-color: rgb(98, 96, 238);">UI</p>
-                    <p style="border-color: rgb(71, 181, 224);">UX</p>
-                </div>
-                <h2>Emergency Healthcare Redesign</h2>
-                <p class = "description">A redesign of College Park Emergency Care's web presence and appointment registration system.</p>
-            </div>
+            <div class="port hvr-grow" style="background-image: url(em_new.jpg);" onclick="location.href='index_psyc_project.html'"></div>
+        </div>
         </div>
         <div class="portContainer">
-            <div class="port hvr-grow" style="background-image: url('psyc_mobile.jpg');" onclick="location.href=">
-            </div>
-            <div class="portSecondary">
-                <div class="tool">
-                    <p style="border-color: rgb(96, 238, 195);">Figma</p>
-                    <p style="border-color: rgb(98, 96, 238);">UI</p>
-                    <p style="border-color: rgb(71, 181, 224);">UX</p>
-                </div>
-                <h2>PSYC MOBILE</h2>
-                <p class = "description">An Application Mockup to help students learn Psychology, and have fun doing it.
-                    An Application Mockup to help students learn Psychology, and have fun doing it.</p>            </div>
+            <div class="port hvr-grow" style="background-image: url(15.png);" onclick="location.href='index_psyc_project.html'"></div>
+        </div>
         </div>
         <!-- <div class="port hvr-grow" style="background-image: url('img3.jpg');">
             <h2>PROJECT 3</h2>
@@ -78,6 +59,7 @@
         </div> -->
     </div>
 </body>
+<br><br><br>
     <footer>
     </footer>
 </html>
@@ -158,7 +140,7 @@
     transform: rotate(17.89deg);
     }
     body{
-        overflow-x:hidden
+        overflow-x:hidden;
     }
     #introduction{
         font-size: calc(4.7vh);
@@ -308,26 +290,27 @@
     .portContainer{
         align-items: stretch;
         display: flex;
+        width: 55vw;
         height: 100vh;
         padding: 100px;
         height: 70vh;
-        
+
     }
     .port{
         padding: 5vh;
-        padding-bottom: 100px;
-        width: 40vw;
+        padding-bottom: 250px;
+        width: 46vw;
         background-color: rgb(115, 133, 167);
+        background-size:  cover;
         transition: font-size 200ms;
         flex: 1 1 50%;
         font-size: 3vh;
+        height: 50vh;
         vertical-align: bottom;
         align-content: flex-end;
         align-items: flex-end;
         color: rgb(166, 188, 190);
-        border-top: 9px solid  rgb(15, 14, 26);
-        border-left: 9px solid  rgb(15, 14, 26);
-        border-bottom: 9px solid  rgb(15, 14, 26);
+        border-radius: 30px;
     }
     .portSecondary{
         background-color: rgba(15, 14, 26, 1);
@@ -336,7 +319,7 @@
         margin-left: -100px;
         font-family: 'Roboto Condensed', sans-serif;
         font-size: 2em;
-        padding: 130px;
+        padding: 150px;
         font-weight: 100;
     }
     .port p{
@@ -385,16 +368,16 @@
     .hvr-grow {
         display: inline-block;
         vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
+        -webkit-transform: perspective(1.1px) translateZ(0);
+        transform: perspective(1.1px) translateZ(40);
         -webkit-transition-duration: 300ms;
         transition-duration: 300ms;
         -webkit-transition-property: transform;
         transition-property: transform, font-size, padding-left, border-top, border-left, border-bottom, box-shadow;
     }
     .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-        -webkit-transform: scale(1.0005);
-        transform: scale(1.0005), translateX(1000px);
+        -webkit-transform: scale(1.05);
+        transform: scale(1.1), translateX(1000px);
         cursor: pointer;
         offset: 2px;
         padding-left: 70px;
@@ -409,13 +392,13 @@
     /* Rectangle 7 */
     #rectangle7{
     position: absolute;
-    width: 4592px;
+    width: 2592px;
     height: 2188px;
     left: -934px;
-    top: 2495px;
+    top: 1495px;
     z-index: -1000;
-    background: linear-gradient(180deg, #16191B 0%, #263B50 100%);
-    box-shadow: 12px 12px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(180deg, #16191B 0%, #171f27 100%);
+    border: 2px solid brown;
     border-radius: 1094px;
     transform: rotate(-90deg);
     }
@@ -441,7 +424,7 @@
     }
     footer{
         width: 100vw;
-        height: 600px;
+        height: 300vh;
         background-color: black;
     }
     #banner{
@@ -483,18 +466,19 @@
             display: block;
             padding: 0px;
             width: 50vw;
-            padding-bottom: 500px;
             margin-left: 10vw;
+
         }
         .portSecondary{
             width: 70vw;
-            height: calc(90vh + 20px);
+            height: calc(10vh + 20px);
             font-weight: 300;
+            min-height: 31vh;
+            max-height: 31vh;
             display: block;
             margin-left: auto;
             margin-right: auto;
             margin-top: -40px;
-            padding-top: 400px;
             padding:20px;
             border-radius: 20px;
         }
@@ -502,15 +486,15 @@
             padding-bottom: 30px;
         }
         .port{
-            width: 70vw;
+            width: 30vw;
             border-left: 5px;
             border: 4px solid rgb(15, 14, 26);
-            padding-bottom: 200px;
-            height: 30vh;
+            min-height: 73vh;
+            max-height: 73vh;
+            min-width: 73vw;
             padding:15.4px;
-            background-size: 160%;
+            background-size:150vw;
             display: block;
-            margin-left: auto;
             margin-right: auto;
             border-radius: 20px;
             
