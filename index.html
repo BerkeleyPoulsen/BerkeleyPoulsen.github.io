@@ -457,7 +457,7 @@ body {
         #introduction {
             margin-top: 10vh;
             width: 75%;
-            display: inline;
+            display: inline-block;
         }#header a{
             font-weight: 700;
             font-family: 'Raleway', sans-serif;
@@ -528,6 +528,7 @@ body {
             margin-bottom: -60px;
             
         }#links{
+            padding: 40px;
             display: inline;
             padding: 0px;
             text-align: left;
@@ -541,6 +542,10 @@ body {
             left: 230px;
             top: 120px;
             z-index: -1000;
+        }#title{
+            padding-right: 20px;
+            margin-left: 20px;
+            font-size: 70px;
         }
     }
 
@@ -649,7 +654,7 @@ body {
         document.getElementById("links").style.marginBottom = "5px";
         document.getElementById("links").style.weight = "300px";
         document.getElementById("links").style.fontSize = "2.5vh";
-        document.getElementById("title").style.fontSize = "4vh";
+        document.getElementById("title").style.fontSize = "6vh";
         document.getElementById("title").style.border = "0px";
         document.getElementById("title").style.paddingLeft = "0px";
         document.getElementById("title").style.transition = "0.7s";
@@ -664,7 +669,7 @@ body {
         document.getElementById("title").style.fontSize = "70px";
         document.getElementById("links").style.marginBottom = "20px";
         document.getElementById("links").style.fontSize = "3vh";
-        document.getElementById("title").style.fontSize = "7vh";
+        document.getElementById("title").style.fontSize = "10vh";
         document.getElementById("title").style.border = "0px";
         document.getElementById("title").style.transition = "0.7s";
         document.getElementById("hi").innerHTML = "Hi, I'm";
