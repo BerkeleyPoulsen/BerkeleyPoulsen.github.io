@@ -11,7 +11,6 @@
 <div id="wrapper">
 <body>
     <svg id="rectangle12"class="rectangle"></svg>
-    <svg id="rectangle7"class="rectangle"></svg>
     <svg id="rectangle5"class="rectangle"></svg>
     <svg id="rectangle3"class="rectangle"></svg>
     <svg id="rectangle4"class="rectangle"></svg>
@@ -81,7 +80,7 @@ body {
         left: 430.71px;
         top: 740px;
 
-        background: linear-gradient(180deg, #1B1B2D 0%, #214D5A 100%);
+        background: linear-gradient(180deg, #d7d7f0 0%, #cce0e6 100%);
         box-shadow: 40px 25px 0px #111213;
         border-radius: 99px;
         transform: rotate(38.4deg);
@@ -96,10 +95,10 @@ body {
     left: 1028.63px;
     top: 365px;
 
-    background: linear-gradient(180deg, #1B1B2D 0%, #3B7A8E 100%);
-    border: 2px solid #FC7373;
+    background: linear-gradient(180deg, #d3d3ee 0%, #d6e8ee 100%);
+    border: 2px solid rgb(51, 51, 238);
     box-sizing: border-box;
-    box-shadow: 92px 2px 0px #111213;
+    box-shadow: 52px 2px 0px #111213;
     border-radius: 200px;
     transform: rotate(38.4deg);
     }
@@ -113,8 +112,8 @@ body {
     left: 1098px;
     top: -160.49px;
 
-    background: linear-gradient(180deg, #1B1B2D 0%, #214D5A 100%);
-    border: 2px solid #FC7373;
+    background: linear-gradient(180deg, #d4d4f0 0%, #e1eef1 100%);
+    border: 2px solid rgb(51, 51, 238);
     box-sizing: border-box;
     border-radius: 113px;
     transform: rotate(-63.98deg);
@@ -128,8 +127,10 @@ body {
     height: 626.76px;
     left: 1429px;
     top: 98.86px;
+    box-shadow: -35px 35px 0px #111213;
+    border: 2px solid rgb(51, 51, 238);
 
-    background: linear-gradient(180deg, #1B1B2D 0%, #214D5A 100%);
+    background: linear-gradient(180deg, #d7d7f1 0%, #cbe3eb 100%);
     border-radius: 200px;
     transform: rotate(-77.06deg);
 
@@ -142,8 +143,8 @@ body {
     left: 1330.35px;
     top: 651px;
 
-    background: linear-gradient(180deg, #1B1B2D 0%, #335A67 100%);
-    box-shadow: 42px 40px 0px #111213;
+    background: linear-gradient(180deg, #ceceee 0%, #cce4ec 100%);
+    box-shadow: 32px 30px 0px #111213;
     border-radius: 200px;
     transform: rotate(17.89deg);
     }
@@ -199,7 +200,7 @@ body {
     }
     html{
         overflow-x: hidden;
-        background-color: rgb(19, 19, 20);
+        background-color: rgb(51, 51, 238);
         margin:auto;
         width: 100vw;
         height: 100vh;
@@ -398,18 +399,6 @@ body {
         box-shadow:inset 0px 0px 60px 3px rgba(201, 226, 236, 1);
     }
     /* Rectangle 7 */
-    #rectangle7{
-    position: absolute;
-    width: 2592px;
-    height: 2188px;
-    left: -934px;
-    top: 1495px;
-    z-index: -1000;
-    background: linear-gradient(180deg, #16191B 0%, #171f27 100%);
-    border: 2px solid brown;
-    border-radius: 1094px;
-    transform: rotate(-90deg);
-    }
     .intro{
         padding-left: 5vw;
         padding-top: 40px;
@@ -651,14 +640,14 @@ body {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0 || (x.matches)){
         //MAKE HEADER
         document.getElementById("header").style.font = "'Raleway', sans-serif";
-        document.getElementById("header").style.backgroundColor = "rgba(19, 19, 20,1)";
+        document.getElementById("header").style.backgroundColor = "rgba(51, 51, 238,1)";
         document.getElementById("header").style.borderBottom = "0px solid #ffffff";
         document.getElementById("header").style.display = "inline-flexbox";
         document.getElementById("header").style.padding = "10px";
         document.getElementById("links").style.marginBottom = "5px";
         document.getElementById("links").style.weight = "300px";
         document.getElementById("links").style.fontSize = "2.5vh";
-        document.getElementById("title").style.fontSize = "6vh";
+        document.getElementById("title").style.fontSize = "4vh";
         document.getElementById("title").style.border = "0px";
         document.getElementById("title").style.paddingLeft = "0px";
         document.getElementById("title").style.transition = "0.7s";
